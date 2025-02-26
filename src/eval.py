@@ -12,7 +12,7 @@ client = OpenAI(
 )
 
 client_gpt = OpenAI(
-    api_key='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'
+    api_key=''
 )
 
 def bertscore(label: list[str], predicted: list[str]) -> float:
