@@ -1,0 +1,40 @@
+[project]
+name = "llm_eval"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "bert-score>=0.3.13",
+    "fastapi>=0.115.8",
+    "openai>=1.64.0",
+    "uvicorn>=0.34.0",
+]
+
+[dependency-groups]
+dev = [
+    "pyright>=1.1.393",
+    "ruff>=0.9.3",
+]
+
+[tool.pyright]
+include = ["src"]
+strict = ["src"]
+exclude = ["**/__pycache__"]
+pythonVersion = "3.12"
+
+[tool.ruff.lint]
+select = [
+    # pycodestyle
+    "E",
+    # Pyflakes
+    "F",
+    # pyupgrade
+    "UP",
+    # flake8-bugbear
+    "B",
+    # flake8-simplify
+    "SIM",
+    # isort
+    "I",
+]
