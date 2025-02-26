@@ -8,7 +8,7 @@ from utils import prompt, error_classes, judge_prompt
 
 client = OpenAI(
     base_url = 'http://localhost:11434/v1',
-    api_key=''
+    api_key='qwen2.5'
 )
 
 client_gpt = OpenAI(
